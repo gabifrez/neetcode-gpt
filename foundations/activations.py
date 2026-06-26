@@ -9,7 +9,7 @@ class Solution:
         # Formula: 1 / (1 + e^(-z))
         # return np.round(your_answer, 5)
         for i in range(len(z)):
-            z[i] = 1 / (1 + np.e **(-z[i]))
+            z[i] = 1 / (1 + np.exp(-z[i]))
             z[i] = np.round(z[i], 5)
         return z
 
